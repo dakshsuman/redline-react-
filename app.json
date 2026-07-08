@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "REDLINE",
+    "slug": "RedlineRN",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0B0B0C",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.redline.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "REDLINE uses your location to track your route, speed, and nearby camera alerts while you drive.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "REDLINE records your drives in the background so your stats and Drive DNA rating stay accurate even when the app is closed.",
+        "NSMotionUsageDescription": "REDLINE uses motion data to detect launches and measure 0-60, braking, and cornering G.",
+        "NSCameraUsageDescription": "REDLINE needs camera access for live video Gap-Battles.",
+        "NSMicrophoneUsageDescription": "REDLINE needs microphone access for live video Gap-Battles."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0B0B0C",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.redline.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "REDLINE records your drives in the background so your stats stay accurate.",
+          "locationWhenInUsePermission": "REDLINE uses your location to track your route, speed, and nearby camera alerts."
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "16.4"
+          }
+        }
+      ],
+      "@maplibre/maplibre-react-native",
+      "@livekit/react-native-expo-plugin",
+      "@config-plugins/react-native-webrtc"
+    ]
+  }
+}

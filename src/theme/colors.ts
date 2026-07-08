@@ -1,0 +1,18 @@
+export const colors = {
+  bg: '#0B0B0C',
+  surface: '#141418',
+  fill: 'rgba(255,255,255,.05)',
+  hair: 'rgba(255,255,255,.08)',
+  dim: '#8A8A90',
+  faint: '#6A6A70',
+  acc: '#FF5A2E',
+  go: '#3ED686',
+  white: '#FFFFFF',
+  glassBg: 'rgba(15,15,19,.86)',
+  tabBg: '#050506',
+  liveRed: 'rgba(255,48,32,.92)',
+  gradStart: '#FF3020',
+  gradEnd: '#FF7A00',
+  gaugeBg: 'rgba(9,9,12,.55)',
+  mapBg: '#0a0b0e',
+};
